@@ -1,33 +1,41 @@
 # TaskManager
 
-## Objective
-TaskManager is a Spring Boot application designed to perform various tasks such as managing tasks in memory, performing mathematical calculations, handling string manipulations, and returning responses in JSON format.
+TaskManager is a Spring Boot application that performs a variety of tasks, including managing tasks in memory, performing mathematical operations, handling string manipulations, and providing responses in JSON format.
 
 ---
 
-## Key Features
+## Features
 
-### 1. Task Management
-- Add, delete, and retrieve tasks stored in memory using a `HashMap` or `List`.
+### Task Management
+- Add, retrieve, and delete tasks stored in memory using a `HashMap` or `List`.
 
-### 2. Mathematical Operations
+### Mathematical Operations
 - Perform basic calculations:
   - Addition
   - Subtraction
   - Multiplication
   - Division
 
-### 3. String Manipulations
-- Reverse strings.
-- Count vowels and consonants.
-- Convert string cases (e.g., uppercase to lowercase and vice versa).
+### String Manipulations
+- Reverse a string.
+- Count vowels and consonants in a string.
+- Convert a string to uppercase or lowercase.
 
-### 4. Custom Exception Handling
-- Graceful error handling with:
-  - Custom exceptions.
-  - Appropriate HTTP status codes.
+### Custom Exception Handling
+- Gracefully handle errors with custom exceptions and HTTP status codes.
 
 ---
 
 ## Project Structure
 
+```plaintext
+src
+├── main
+│   ├── java
+│   │   └── com.example.taskmanager
+│   │       ├── controller      # REST controllers for API endpoints
+│   │       ├── service         # Business logic and services
+│   │       ├── model           # Data models for tasks
+│   │       └── exception       # Custom exceptions and handlers
+│   ├── resources
+│   │   └── application.properties  # Spring Boot configuration
